@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "356173213575",
+    "firebase_url": "https://keeping-track-88a83.firebaseio.com",
+    "project_id": "keeping-track-88a83",
+    "storage_bucket": "keeping-track-88a83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356173213575:android:1c2a590d166a2b8482ad22",
+        "android_client_info": {
+          "package_name": "com.martvenck.keeping_track"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356173213575-l6k9d477qgnucva8l81uc1bi4q8o07sh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.martvenck.keeping_track",
+            "certificate_hash": "e6ea28ce48918a9ebe67ddb99642ba9643fae9a4"
+          }
+        },
+        {
+          "client_id": "356173213575-hda0b2sc8a51smi7ang10gguv9u0kcen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXU3XA_cBotaP02lbufiDYwRYs3X-yfGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356173213575-hda0b2sc8a51smi7ang10gguv9u0kcen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

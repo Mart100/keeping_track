@@ -1,3 +1,4 @@
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:keeping_track/main.dart';
 import 'package:get/get.dart';
@@ -51,6 +52,8 @@ class _SettingsPageState extends State<SettingsPage> {
 										else ThemeModeHandler.of(context).saveThemeMode(ThemeMode.light);
 										setState(() {
 											darkThemeSwitch = boolVal;
+                      Crashlytics.instance.log('baz');
+                      Crashlytics.instance.crash();
 										});
 									},
 								)

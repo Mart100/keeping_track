@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:keeping_track/pages/dayValuesSettings.dart';
 import 'package:keeping_track/pages/loading.dart';
@@ -10,9 +12,21 @@ import 'package:keeping_track/services/sign_in.dart';
 import 'package:keeping_track/services/themeModeHandler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:theme_mode_handler/theme_mode_handler.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 
-void main() => runApp(App());
+void main() {
+  
+  Crashlytics.instance.enableInDevMode = true;
 
+  // Pass all uncaught errors from the framework to Crashlytics.
+  FlutterError.onError = Crashlytics.instance.recordFlutterError;
+  
+  
+  runZoned(() {
+    runApp(App());
+  }, onError: Crashlytics.instance.recordError);
+
+}
 
 class App extends StatefulWidget {
 
